@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand&subset=latin,latin-ext,cyrillic);
+body {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #0C9;
+}
+
+h2 {
+    text-align: center;
+    color: #030;
+}
+
+canvas {
+    margin: 0 auto;
+    display: flex;
+}
+
+#myCanvas {
+    display: none;
+}
+
+button.Start {
+    display: block;
+    width: 20vw;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    background: #00BF96;
+    color: #fff;
+    font-size: 2em;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #CCC;
+    cursor: pointer;
+}
+
+button.End {
+    display: block;
+    width: 20vw;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    background: #00BF96;
+    color: #fff;
+    font-size: 2em;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #CCC;
+    cursor: pointer;
+}
+
+button.left {}
+
+#Statics {
+    width: 80vmin;
+    margin: 0 auto;
+    display: none;
+    font-weight: bold;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#Sounds {
+    position: fixed;
+    display: none;
+    -webkit-align-items: center;
+    align-items: baseline;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+label {
+    background-color: #00BF96;
+    margin: .2em;
+    padding: .5em 1em;
+    color: #FFF;
+}
+
+.lives {
+    width: 230px;
+    height: auto;
+    padding: .1em;
+    display: flex;
+}
+
+#heart {
+    width: 40px;
+    height: 50%;
+    padding: 1px;
+    max-height: 80px;
+}
+
+#countdown {
+    font-family: sans-serif;
+    color: #000;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#countdown > span {
+    padding: .5em;
+    border-radius: .2em;
+    background: #00BF96;
+    color: #fff;
+    display: inline-block;
+}
+
+.points {
+    padding: 1em;
+    border-radius: .2em;
+    background: #00BF96;
+    color: #fff;
+}
+
+#RoleList {
+    width: 100vmin;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.roleImg {
+    cursor: pointer;
+    margin: 1em;
+}
+
+#roleIntro {
+    width: 20vw;
+    display: none;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: .2em;
+    font-size: 1em;
+    color: #000;
+}
+
+#gameOver {
+    width: 100%;
+    display: none;
+}
+
+.gameSum {
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+    font-size: 3em;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#pointsSum {
+    font-size: 2em;
+    color: #00BF96;
+}
+
+.Message {
+    width: 80vw;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: .8em auto;
+}
+
+
+/*layout*/
+
+.mid {
+    width: 100vmin;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    font-weight: bold;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.red {
+    color: #F00;
+}
+
+.coffee {
+    color: #300;
+}
+
+.deepGreen {
+    color: #030;
+}
+
+.large {
+    font-size: 3em;
+}

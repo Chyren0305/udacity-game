@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+
+<body>
+    <h1>Udacity Frogger Game</h1>
+    <!-- Statics -->
+    <div id="Statics" class="mid">
+        <div class="lives"></div>
+        <div id="countdown">
+            <span class="minutes"></span> : <span class="seconds"></span>
+        </div>
+        <div class="scores">Score: <span class="points">0</span></div>
+    </div>
+    <!-- Sounds -->
+    <div id="Sounds">
+    <label><input type="checkbox" name="effect" id="effect" onclick="pauseAudio()" value="effect" checked />Effect</label>
+    <label><input type="checkbox" name="BGM" id="bgm" value="BGM"  onclick="document.getElementById('bgm').checked; bgm.muted = !bgm.muted;" /> BGM</label>
+    </div>
+    <!-- GameBegin -->
+    <div id="GameBegin">
+        <h2>Choose Your Role</h2>
+        <div id="RoleList" class="roles">
+            <div>
+                <img id="role01" class="roleImg" onclick="roleChoice(this.id, 0)" src="images/char-boy.png" alt="Ryan role">
+
+
+                <img id="role02" class="roleImg" onclick="roleChoice(this.id, 1)" src="images/char-pink-girl.png" alt="Joanne role">
+
+                <img id="role03" class="roleImg" onclick="roleChoice(this.id, 2)" src="images/char-cat-girl.png" alt="Cathy role">
+
+                <img id="role04" class="roleImg" onclick="roleChoice(this.id, 3)" src="images/char-horn-boy.png" alt="Karl role">
+                
+            </div>
+            <div id="roleIntro">
+                <h3 class="deepGreen"></h3>
+                <p class="center"></p>
+            </div>
+               
+        </div>
+        <button id="startGame" class="button Start mid" onclick="gameStart();" value="Game Start">Game Start</button>
+    </div>
+    <script src="js/resources.js" async></script>
+    <script src="js/app.js" async></script>
+    <script src="js/engine.js" async></script>
+    <!-- Game over  and Staitcs Show -->
+    <div id="gameOver">
+        <h1 class="red large">Game Over!Q_Q</h1>
+        <p class="gameSum">
+            You have <span id="pointsSum">0</span> Points !
+        </p>
+        <h3 class="Message"></h3>
+        <button id="endGame" class="button End mid" onclick="location.reload();" value="Game Over">Reset Game</button>
+    </div>
+</body>
+
+</html>
