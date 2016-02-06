@@ -51,7 +51,7 @@ var water = new Audio('sound/Water.mp3');
 
 var Hit = new Audio('sound/Hit.mp3');
 var gotStar = new Audio('sound/Star.mp3');
-var gotGem = new Audio('Sound/Gem.mp3');
+var gotGem = new Audio('sound/Gem.mp3');
 
 var RyanYell = new Audio('sound/RyanYell.mp3');
 var JoanneYell = new Audio('sound/JoanneYell.mp3');
