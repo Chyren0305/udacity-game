@@ -347,9 +347,11 @@ function roleChoice(roleId, imgIndex) {
     for (var i = 0; i < uRole.length; i++) {
         uRole[i].style.border = 'none';
         uRole[i].style.borderRadius = 'none';
+        uRole[i].style.boxShadow = 'none';
     }
-    document.getElementById(roleId).style.border = '3px solid #030';
-    document.getElementById(roleId).style.borderRadius = '3em';
+    document.getElementById(roleId).style.border = '1px solid #333';
+    document.getElementById(roleId).style.borderRadius = '10px';
+    document.getElementById(roleId).style.boxShadow = '5px 5px 3px #030';
     roleIntro.style.display = 'flex';
     roleIntro.querySelector('h3').innerHTML = roleName[imgIndex];
     roleIntro.querySelector('p').innerHTML = roleInfo[imgIndex];
