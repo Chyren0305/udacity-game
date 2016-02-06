@@ -51,12 +51,12 @@ var water = new Audio('sound/Water.mp3');
 
 var Hit = new Audio('sound/Hit.mp3');
 var gotStar = new Audio('sound/Star.mp3');
-var gotGem = new Audio('Sound/Gem.mp3');
+var gotGem = new Audio('sound/Gem.mp3');
 
-var RyanYell = new Audio('Sound/RyanYell.mp3');
-var JoanneYell = new Audio('Sound/JoanneYell.mp3');
-var CathyYell = new Audio('Sound/CathyYell.mp3');
-var KarlYell = new Audio('Sound/KarlYell.mp3');
+var RyanYell = new Audio('sound/RyanYell.mp3');
+var JoanneYell = new Audio('sound/JoanneYell.mp3');
+var CathyYell = new Audio('sound/CathyYell.mp3');
+var KarlYell = new Audio('sound/KarlYell.mp3');
 
 var bgm = new Audio('sound/Ponies_and_Balloons.mp3');
 
@@ -499,4 +499,3 @@ var gem = new Gem();
 console.log(player.x, player.y);
 console.log(allEnemies[0].x, allEnemies[0].y);
 console.log(Star.prototype.render);
-console.log(Enemy.prototype.update);
