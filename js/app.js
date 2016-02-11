@@ -114,8 +114,8 @@ Enemy.prototype.update = function(dt) {
         }
     }
 
-    if (player.y >= this.y - 45 && player.y <= this.y + 45) {
-        if (player.x >= this.x - 45 && player.x <= this.x + 45) {
+    if (player.y >= this.y - 30 && player.y <= this.y + 30) {
+        if (player.x >= this.x - 42 && player.x <= this.x + 42) {
             switch (roleIndex) {
                 case 0:
                     RyanYell.play();
