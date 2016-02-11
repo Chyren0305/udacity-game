@@ -105,17 +105,17 @@ Enemy.prototype.update = function(dt) {
     // which will ensure the game runs at the same speed for
     // all computers.
     this.x += (this.speed * dt);
-    if (this.x > 550) {
+    if (this.x > 505) {
         this.x = this.col;
         this.y += this.row;
         this.speed = Math.floor(100 + (Math.random() * 200));
-        if (this.y > 226) {
-            this.y = 60;
+        if (this.y > 202) {
+            this.y = 83;
         }
     }
 
-    if (player.y >= this.y - 45 && player.y <= this.y + 45) {
-        if (player.x >= this.x - 45 && player.x <= this.x + 45) {
+    if (player.y >= this.y - 30 && player.y <= this.y + 30) {
+        if (player.x >= this.x - 42 && player.x <= this.x + 42) {
             switch (roleIndex) {
                 case 0:
                     RyanYell.play();
@@ -146,9 +146,9 @@ Enemy.prototype.render = function() {
 
 Enemy.prototype.Basic = function() {
     this.col = -1;
-    this.row = getRandomInit(2, 3);
+    this.row = getRandomInit(1, 3);
     this.x = 101 * this.col;
-    this.y = 83 * this.row;
+    this.y = 73 * this.row;
 
 };
 Enemy.prototype.RandomSpeed = function() {
@@ -486,7 +486,7 @@ document.addEventListener('keyup', function(e) {
 
 
 var allEnemies = [];
-for (var i = 1; i < 4; i++) {
+for (var i = 1; i < 3; i++) {
     allEnemies.push(new Enemy());
 };
 

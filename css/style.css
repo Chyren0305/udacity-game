@@ -56,7 +56,7 @@ button.End {
 button.left {}
 
 #Statics {
-    width: 80vmin;
+    width: 100vmin;
     margin: 0 auto;
     display: none;
     font-weight: bold;
@@ -98,6 +98,7 @@ label {
 }
 
 #countdown {
+	width: 30vw;
     font-family: sans-serif;
     color: #000;
     display: inline-block;
